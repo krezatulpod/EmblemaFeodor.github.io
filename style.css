@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+#emblemaHome {
+  background-image: linear-gradient(
+      to right,
+      rgba(41, 39, 39, 0.88),
+      rgba(41, 39, 39, 0.58)
+    ),
+    url(static/image/43608476-two-young-handsome-engineers-working-on-electronics-components-and-fixing-broken-chips-1024x682.jpg);
+  height: 100%;
+  background-position: 50% 57%;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+}
+
+.wrap {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  margin: 15px 0;
+}
+.top-row {
+  display: flex;
+  padding: 15px 5px;
+  flex: 1 1 33.3vw;
+  align-items: baseline;
+  border-bottom: 2px solid rgb(145, 140, 140);
+  width: 90vw;
+}
+
+.mid-row {
+  display: flex;
+  padding: 15px 5px;
+  flex: 1 1 33.3vw;
+  width: 90vw;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .mid-row > img {
+    width: 500px;
+  }
+}
+
+.txt-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex: 1 1;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40vw 20vw;
+  justify-content: center;
+  justify-items: start;
+}
+.mid-content {
+  overflow-y: auto;
+}
+
+.logo-img > img {
+  width: 150px;
+}
+
+.txt > h2 {
+  font-size: 0.8rem;
+}
